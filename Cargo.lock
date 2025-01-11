@@ -337,6 +337,7 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
+ "serde_spanned",
  "smallvec",
  "smol_str",
  "trybuild",
@@ -406,6 +407,12 @@ dependencies = [
  "ryu",
  "serde",
 ]
+
+[[package]]
+name = "serde_spanned"
+version = "0.6.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "87607cb1398ed59d48732e575a4c28a7a8ebf2454b964fe3f224f2afc07909e1"
 
 [[package]]
 name = "smallvec"

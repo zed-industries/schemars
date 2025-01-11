@@ -36,13 +36,14 @@ bigdecimal04 = { version = "0.4", default-features = false, optional = true, pac
 enumset = { version = "1.0", optional = true }
 smol_str = { version = "0.1.17", optional = true }
 semver = { version = "1.0.9", features = ["serde"], optional = true }
+serde_spanned = { version = "0.6.8", optional = true }
 
 [dev-dependencies]
 pretty_assertions = "1.2.1"
 trybuild = "1.0"
 
 [features]
-default = ["derive"]
+default = ["derive", "spanned"]
 
 derive = ["schemars_derive"]
 
@@ -64,6 +65,8 @@ indexmap1 = ["indexmap"]
 raw_value = ["serde_json/raw_value"]
 # `bigdecimal` feature without version suffix is included only for back-compat - will be removed in a later version
 bigdecimal = ["bigdecimal03"]
+
+spanned = ["serde_spanned"]
 
 ui_test = []
 
